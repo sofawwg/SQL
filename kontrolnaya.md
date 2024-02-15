@@ -30,7 +30,7 @@ SELECT  c.first_name,c.last_name,  AVG(o.quantity * p.price) AS average,
 ``` sql
 UPDATE Products
 SET price = CASE
-    WHEN category = 'Одежда' THEN price * 0.875 
+    WHEN category = 'clothes' THEN price * 0.875 
     ELSE price * 0.95  
 END;
 ```
